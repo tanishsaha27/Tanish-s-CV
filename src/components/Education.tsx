@@ -8,52 +8,49 @@ const Education = () => {
     {
       degree: "Bachelor of Technology",
       field: "Computer Science & Engineering",
-      institution: "Your University Name",
-      location: "Your City, Country",
-      period: "2020 - 2024",
-      grade: "CGPA: 8.5/10",
+      institution: "Kalyani University",
+      rank: {
+        value: "468",
+        exam: "WBJEE"
+      },
+      location: "Kalyani, India",
+      period: "2023 - 2027",
+      grade: "SGPA: 7.2/10",
       achievements: [
-        "Dean's List for 3 consecutive semesters",
-        "Best Final Year Project Award",
-        "Active member of Computer Science Society"
+        "Participated in Hackathons",
+        "Completed Online Courses on Java and Spring Boot"
       ],
-      courses: ["Data Structures", "Algorithms", "Database Systems", "Web Development", "Software Engineering"]
+      courses: ["Data Structures", "Algorithms", "Database Systems", "Backend Development", "Software Engineering","Currently learning AI & ML"]
     },
     {
       degree: "Higher Secondary Certificate",
-      field: "Science (PCM)",
-      institution: "Your School Name",
-      location: "Your City, Country", 
-      period: "2018 - 2020",
-      grade: "Percentage: 92%",
+      field: "Science (PCMC)",
+      institution: "MP BIRLA FOUNDATION HIGHER SECONDARY SCHOOL",
+      location: "Kolkata, India",
+      period: "2009 - 2023",
+      grade: "Percentage: 89%",
       achievements: [
-        "School Topper in Computer Science",
-        "National Science Olympiad Qualifier",
-        "Head of Computer Club"
+        "Was an acitive member of the Coding club",
       ],
       courses: ["Physics", "Chemistry", "Mathematics", "Computer Science", "English"]
     }
   ];
 
   const certifications = [
+
     {
-      title: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-DEV-2023-001"
+      title: "Java certification",
+      issuer: "Apna College",
+      date: "2024",
+      credentialId: "681bb69f7ddc2f471c0824141"
     },
     {
-      title: "React Developer Certification",
-      issuer: "Meta",
-      date: "2023",
-      credentialId: "META-REACT-2023"
+      title: "Web Development Certification",
+      issuer: "Apna College",
+      date: "2025",
+      credentialId: "789bb83f7ddc2f471c0627142"
     },
-    {
-      title: "Full Stack Web Development",
-      issuer: "freeCodeCamp",
-      date: "2022",
-      credentialId: "FCC-FULLSTACK-2022"
-    }
+    
   ];
 
   useEffect(() => {
@@ -108,27 +105,39 @@ const Education = () => {
                     </h4>
                     <p className="text-lg text-primary font-medium">{edu.field}</p>
                     <p className="text-muted-foreground">{edu.institution}</p>
-                    <div className="flex justify-between items-center mt-2 text-sm text-muted-foreground">
-                      <span>{edu.period}</span>
-                      <span className="font-semibold text-primary">{edu.grade}</span>
-                    </div>
+                    {/* Show rank, location, and period together for college */}
+                    {edu.rank && edu.location && edu.period ? (
+                      <div className="flex flex-wrap gap-4 items-center mt-2 text-sm text-muted-foreground">
+                        <span>Rank: <span className="font-semibold text-primary">{edu.rank.value}</span> in {edu.rank.exam}</span>
+                        <span>{edu.location}</span>
+                        <span>{edu.period}</span>
+                        <span className="font-semibold text-primary">{edu.grade}</span>
+                      </div>
+                    ) : (
+                      <div className="flex justify-between items-center mt-2 text-sm text-muted-foreground">
+                        <span>{edu.period}</span>
+                        <span className="font-semibold text-primary">{edu.grade}</span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Achievements */}
-                  <div className="mb-4">
-                    <h5 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                      <Award className="w-4 h-4 text-primary" />
-                      Key Achievements
-                    </h5>
-                    <ul className="space-y-1">
-                      {edu.achievements.map((achievement, idx) => (
-                        <li key={idx} className="text-sm text-muted-foreground flex items-start">
-                          <Star className="w-3 h-3 text-primary mt-1 mr-2 flex-shrink-0" />
-                          {achievement}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  {edu.achievements && edu.achievements.length > 0 && (
+                    <div className="mb-4">
+                      <h5 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                        <Award className="w-4 h-4 text-primary" />
+                        Key Achievements
+                      </h5>
+                      <ul className="space-y-1">
+                        {edu.achievements.map((achievement, idx) => (
+                          <li key={idx} className="text-sm text-muted-foreground flex items-start">
+                            <Star className="w-3 h-3 text-primary mt-1 mr-2 flex-shrink-0" />
+                            {achievement}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
 
                   {/* Relevant Courses */}
                   <div>
@@ -194,15 +203,15 @@ const Education = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Online Courses Completed</span>
-                    <span className="font-semibold text-primary">25+</span>
+                    <span className="font-semibold text-primary">3+</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Workshop Attended</span>
-                    <span className="font-semibold text-primary">10+</span>
+                    <span className="font-semibold text-primary">3+</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Hackathons Participated</span>
-                    <span className="font-semibold text-primary">5+</span>
+                    <span className="font-semibold text-primary">3+</span>
                   </div>
                 </div>
               </div>

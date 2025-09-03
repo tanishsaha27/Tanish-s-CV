@@ -5,31 +5,26 @@ const SocialMedia = () => {
     {
       name: 'GitHub',
       icon: <Github className="w-6 h-6" />,
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/tanishsaha27',
       color: 'hover:bg-gray-800'
     },
     {
       name: 'LinkedIn',
       icon: <Linkedin className="w-6 h-6" />,
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/tanish-saha/',
       color: 'hover:bg-blue-600'
     },
-    {
-      name: 'Twitter',
-      icon: <Twitter className="w-6 h-6" />,
-      url: 'https://twitter.com/yourusername',
-      color: 'hover:bg-sky-500'
-    },
+    
     {
       name: 'Instagram',
       icon: <Instagram className="w-6 h-6" />,
-      url: 'https://instagram.com/yourusername',
+      url: 'https://www.instagram.com/tn1sh._/?hl=en',
       color: 'hover:bg-pink-600'
     },
     {
       name: 'Email',
       icon: <Mail className="w-6 h-6" />,
-      url: 'mailto:your.email@example.com',
+      url: 'mailto:tanish27saha@gmail.com',
       color: 'hover:bg-red-600'
     }
   ];

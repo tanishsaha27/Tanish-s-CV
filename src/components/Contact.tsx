@@ -44,19 +44,19 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com"
+      value: "tanish27saha@gmail.com",
+      href: "mailto:tanish27saha@gmail.com"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "+91 12345 67890",
-      href: "tel:+911234567890"
+      value: "+91 877644569",
+      href: "tel:+91877644569"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Location",
-      value: "Your City, Country",
+      value: "Kolkata, India",
       href: "#"
     }
   ];
@@ -72,7 +72,7 @@ const Contact = () => {
             </h2>
             <div className="section-divider" />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Ready to discuss opportunities or collaborate on exciting projects
+              Ready to discuss upon any opportunities or collaborate on projects
             </p>
           </div>
 
@@ -85,9 +85,8 @@ const Contact = () => {
                   Let's Connect
                 </h3>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-                  I'm always interested in hearing about new opportunities, 
-                  innovative projects, and collaborating with talented teams. 
-                  Whether you have a question or just want to say hi, feel free to reach out!
+                  I’m always open to exploring new opportunities, engaging in innovative projects, and collaborating with talented teams. 
+                  If you’d like to connect or have a question, feel free to reach out!
                 </p>
               </div>
 
@@ -137,7 +136,7 @@ const Contact = () => {
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                        Your Name
+                        Tanish Saha
                       </label>
                       <input
                         type="text"

@@ -24,12 +24,12 @@ const About = () => {
     {
       icon: <Code className="w-6 h-6" />,
       title: "Clean Code",
-      description: "Writing maintainable and scalable code following best practices"
+      description: "Writing maintainable and scalable code following the recent trends"
     },
     {
       icon: <Database className="w-6 h-6" />,
       title: "Full Stack",
-      description: "Experienced in both frontend and backend development"
+      description: "Experienced in backend development"
     },
     {
       icon: <Globe className="w-6 h-6" />,
@@ -54,7 +54,7 @@ const About = () => {
             </h2>
             <div className="section-divider" />
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Passionate software developer with a keen eye for detail and a drive for excellence
+              Software developer passionate about writing clean, scalable code with precision and modern AI tools.
             </p>
           </div>
 
@@ -63,17 +63,14 @@ const About = () => {
             <div className={`space-y-6 ${isVisible ? 'animate-slide-in-left' : ''}`} style={{ animationDelay: '0.2s' }}>
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-foreground">
-                  Building Digital Solutions
+                  Shaping Seamless Digital Futures
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  I'm a dedicated software developer with expertise in modern web technologies. 
-                  My journey in programming started with curiosity and has evolved into a passion 
-                  for creating impactful digital experiences.
+                  I'm a dedicated software developer with expertise in modern web technologies and AI Tools. 
+                  I began programming out of curiosity, and over time it has grown into a passion for building impactful applications and leveraging AI to code smarter.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Currently seeking opportunities to contribute to innovative projects and 
-                  collaborate with talented teams. I believe in continuous learning and 
-                  staying updated with the latest industry trends.
+                  Actively looking to contribute to innovative projects while collaborating with dynamic teams, with a strong focus on continuous learning and staying ahead of industry trends.
                 </p>
               </div>
 
@@ -81,7 +78,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-4 pt-6">
                 <div>
                   <span className="text-sm text-muted-foreground">Location</span>
-                  <p className="font-semibold text-foreground">Your City, Country</p>
+                  <p className="font-semibold text-foreground">Kolkata, India</p>
                 </div>
                 <div>
                   <span className="text-sm text-muted-foreground">Experience</span>
@@ -93,7 +90,7 @@ const About = () => {
                 </div>
                 <div>
                   <span className="text-sm text-muted-foreground">Languages</span>
-                  <p className="font-semibold text-foreground">English, Hindi</p>
+                  <p className="font-semibold text-foreground">English, Hindi,Bengali</p>
                 </div>
               </div>
             </div>

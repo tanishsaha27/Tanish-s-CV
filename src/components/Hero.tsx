@@ -31,9 +31,9 @@ const Hero = () => {
           <div className={`space-y-8 ${isVisible ? 'animate-fade-in-up' : ''}`}>
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                <span className="text-foreground">Hello, I'm</span>
+                <span className="text-foreground">Hello, I'm </span>
                 <br />
-                <span className="text-royal-gradient">Your Name</span>
+                <span className="text-royal-gradient">Tanish Saha</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-primary font-semibold">
                 Software Developer
@@ -65,12 +65,8 @@ const Hero = () => {
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-royal-gradient">15+</div>
+                <div className="text-3xl font-bold text-royal-gradient">2+</div>
                 <div className="text-sm text-muted-foreground">Projects Done</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-royal-gradient">100%</div>
-                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
               </div>
             </div>
           </div>

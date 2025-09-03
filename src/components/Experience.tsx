@@ -5,45 +5,16 @@ const Experience = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const experiences = [
+  
     {
-      title: "Frontend Developer",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      period: "Jan 2023 - Present",
+      title: "Backend Developer ",
+      company: "No certain experience yet",
       description: [
-        "Developed responsive web applications using React and TypeScript",
-        "Collaborated with design team to implement pixel-perfect UI components",
-        "Optimized application performance, reducing load time by 40%",
-        "Mentored junior developers on best practices and code reviews"
+        "I have no certain experience yet but I am eager to learn and contribute."
       ],
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js", "MongoDB"]
+      technologies: ["Node.js", "Java", "SpringBoot", "React", "Git" , "Mongo DB"]
     },
-    {
-      title: "Full Stack Developer Intern",
-      company: "StartupXYZ",
-      location: "Your City",
-      period: "Jun 2022 - Dec 2022",
-      description: [
-        "Built full-stack web applications using MERN stack",
-        "Implemented RESTful APIs and database design",
-        "Participated in agile development process and daily standups",
-        "Contributed to open-source projects and documentation"
-      ],
-      technologies: ["Node.js", "Express", "MongoDB", "React", "Git"]
-    },
-    {
-      title: "Web Development Trainee",
-      company: "Digital Academy",
-      location: "Your City",
-      period: "Jan 2022 - May 2022",
-      description: [
-        "Completed intensive training program in modern web technologies",
-        "Developed multiple projects including e-commerce and portfolio sites",
-        "Learned industry best practices and agile methodologies",
-        "Achieved top 10% in cohort performance metrics"
-      ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP"]
-    }
+    
   ];
 
   useEffect(() => {
