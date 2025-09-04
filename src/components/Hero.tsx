@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { Download, ArrowDown } from 'lucide-react';
 import heroImage from '../assets/cv image.jpg';
 
+
+
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -73,16 +75,15 @@ const Hero = () => {
 
           {/* Image */}
           <div className={`relative ${isVisible ? 'animate-slide-in-right' : ''}`} style={{ animationDelay: '0.3s' }}>
-            <div className="relative">
-                
+            <div className="relative flex justify-center items-center">
               <img
-                src={heroImage}
-                alt="Profile"
-                className="w-40 h-40 rounded-full object-cover shadow-lg"
+              src={heroImage}
+              alt="Profile"
+              className="w-80 h-96 rounded-3xl object-cover shadow-2xl"
               />
-              <div className="absolute inset-0 bg-royal-gradient opacity-20 rounded-2xl" />
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" />
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" style={{ animationDelay: '1s' }} />
+              <div className="absolute inset-0 bg-royal-gradient opacity-20 rounded-3xl" />
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" />
+              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" style={{ animationDelay: '1s' }} />
             </div>
           </div>
         </div>
