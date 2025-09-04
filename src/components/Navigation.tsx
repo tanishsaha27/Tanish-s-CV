@@ -60,7 +60,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold text-royal-gradient animate-pulse-royal">
-            Tanish Saha
+            Curriculum Vitae
           </div>
 
           {/* Desktop Navigation */}

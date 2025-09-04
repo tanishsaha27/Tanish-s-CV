@@ -28,7 +28,7 @@ const About = () => {
     },
     {
       icon: <Database className="w-6 h-6" />,
-      title: "Full Stack",
+      title: "Stack",
       description: "Experienced in backend development"
     },
     {
