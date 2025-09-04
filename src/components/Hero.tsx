@@ -73,11 +73,7 @@ const Hero = () => {
           {/* Image */}
           <div className={`relative ${isVisible ? 'animate-slide-in-right' : ''}`} style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-                <img
-                  src="/hero-image.jpg"
-                  alt="Profile"
-                  className="w-40 h-40 rounded-full object-cover shadow-lg"
-                />
+                
               <div className="absolute inset-0 bg-royal-gradient opacity-20 rounded-2xl" />
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" />
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" style={{ animationDelay: '1s' }} />
