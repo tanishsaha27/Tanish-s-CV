@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Download, ArrowDown } from 'lucide-react';
-import heroImage from '@/assets/image.jpg';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,7 +74,7 @@ const Hero = () => {
           <div className={`relative ${isVisible ? 'animate-slide-in-right' : ''}`} style={{ animationDelay: '0.3s' }}>
             <div className="relative">
                 <img
-                  src={heroImage}
+                  src={require('@/assets/image.jpg')}
                   alt="Profile"
                   className="w-40 h-40 rounded-full object-cover shadow-lg"
                 />
