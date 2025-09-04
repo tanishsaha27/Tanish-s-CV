@@ -77,13 +77,11 @@ const Hero = () => {
           <div className={`relative ${isVisible ? 'animate-slide-in-right' : ''}`} style={{ animationDelay: '0.3s' }}>
             <div className="relative flex justify-center items-center">
               <img
-              src={heroImage}
-              alt="Profile"
-              className="w-80 h-96 rounded-3xl object-cover shadow-2xl"
+                src={heroImage}
+                alt="Profile"
+                className="rounded-3xl object-cover shadow-2xl"
+                style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
               />
-              <div className="absolute inset-0 bg-royal-gradient opacity-20 rounded-3xl" />
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" />
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-royal-gradient rounded-full opacity-20 animate-pulse-royal" style={{ animationDelay: '1s' }} />
             </div>
           </div>
         </div>
