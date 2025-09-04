@@ -75,12 +75,12 @@ const Hero = () => {
 
           {/* Image */}
           <div className={`relative ${isVisible ? 'animate-slide-in-right' : ''}`} style={{ animationDelay: '0.3s' }}>
-            <div className="relative flex justify-center items-center">
+            <div className="relative flex justify-center items-center group">
               <img
-                src={heroImage}
-                alt="Profile"
-                className="rounded-3xl object-cover shadow-2xl"
-                style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
+              src={heroImage}
+              alt="Profile"
+              className="rounded-3xl object-cover shadow-2xl transition-all duration-300 group-hover:shadow-royal group-hover:backdrop-blur-md"
+              style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
               />
             </div>
           </div>
