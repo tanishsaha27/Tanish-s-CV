@@ -74,7 +74,7 @@ const Hero = () => {
           <div className={`relative ${isVisible ? 'animate-slide-in-right' : ''}`} style={{ animationDelay: '0.3s' }}>
             <div className="relative">
                 <img
-                  src={require('@/assets/image.jpg')}
+                  src="/image.jpg"
                   alt="Profile"
                   className="w-40 h-40 rounded-full object-cover shadow-lg"
                 />
