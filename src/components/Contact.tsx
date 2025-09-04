@@ -50,8 +50,8 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone",
-      value: "+91 877644569",
-      href: "tel:+91877644569"
+      value: "+91 8777644569",
+      href: "<tel:+918777644569>"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
