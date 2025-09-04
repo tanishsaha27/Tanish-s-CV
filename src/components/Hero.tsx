@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Download, ArrowDown } from 'lucide-react';
-import heroImage from '@/assets/hero-image.jpg';
+import heroImage from '../assets/heroImage.jpg';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
