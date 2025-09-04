@@ -206,7 +206,8 @@
   }
 
   .skill-progress {
-    @apply h-full rounded-full;
+    height: 100%;
+    border-radius: 9999px;
     background: var(--royal-gradient);
     transition: width 1.5s ease-out;
   }
